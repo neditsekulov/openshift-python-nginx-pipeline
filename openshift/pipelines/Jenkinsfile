@@ -1,10 +1,10 @@
-pipeline {
+kpipeline {
     agent {
         node {label 'python'}
     }
     environment {
         APPLICATION_NAME = 'python-nginx'
-        GIT_REPO="http://github.com/ruddra/openshift-python-nginx.git"
+        GIT_REPO="http://github.com/neditsekulov/openshift-python-nginx.git"
         GIT_BRANCH="master"
         STAGE_TAG = "promoteToQA"
         DEV_PROJECT = "dev"
