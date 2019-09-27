@@ -1,4 +1,7 @@
-node('') {
+pipeline {
+    agent {
+        node {label 'python'}
+    }
     environment {
         APPLICATION_NAME = 'python-nginx'
         GIT_REPO="http://github.com/neditsekulov/openshift-python-nginx-pipeline.git"
